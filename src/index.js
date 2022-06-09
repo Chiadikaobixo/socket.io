@@ -1,4 +1,4 @@
-const io = require('socket.io')(9000, {
+const io = require('socket.io')('chiadikaobi-media-socket.herokuapp.com', {
     cors:{
         origin: "https://chiadimedia.vercel.app"
     }
