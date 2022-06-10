@@ -1,4 +1,5 @@
-const io = require('socket.io')('ws://chiadikaobi-media-socket.herokuapp.com', {
+const port = process.env.PORT || 9000
+const io = require('socket.io')(port, {
     cors:{
         origin: "https://chiadimedia.vercel.app"
     }
